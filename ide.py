@@ -373,6 +373,28 @@ class QudeIDE:
             "  button1.cordinates(x, y) | button1.cordint | button1.c$\n"
         )
 
+        linktab = (
+            "Link (Bağlantı)\n\n"
+            "Oluşturma:\n"
+            "  insert.link() as link1\n\n"
+            "Metin:\n"
+            "  link1.text('Metin')\n\n"
+            "URL bağlama:\n"
+            "  link1.link('https://example.com')\n\n"
+            "Stil:\n"
+            "  link1.size = 14\n"
+            "  link1.font.font('Segoe UI')\n"
+            "  link1.text.color('#1a73e8')\n"
+            "  link1.background.color('#222')\n\n"
+            "Konum ve Boyut:\n"
+            "  link1.geometry.size(100, 24)\n"
+            "  link1.cordinates(40, 60)\n\n"
+            "Çalışma:\n"
+            "  Tıklandığında varsayılan tarayıcıda URL açılır.\n"
+            "Not:\n"
+            "  Link bir Label olarak oluşturulur; link özelliği Label üzerinde çalışır.\n"
+        )
+
         inputtab = (
             "Input (Girdi Kutusu)\n\n"
             "Oluşturma (1.1):\n"
@@ -421,6 +443,7 @@ class QudeIDE:
         make_tab("Pencere", pencere)
         make_tab("Yazı", yazi)
         make_tab("Buton", buton)
+        make_tab("Link", linktab)
         make_tab("Input", inputtab)
         make_tab("Event", eventler)
 
